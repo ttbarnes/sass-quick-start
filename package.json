@@ -17,6 +17,8 @@
     "grunt-contrib-cssmin": "~0.10.0",
     "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-uglify": "~0.6.0",
-    "grunt-contrib-watch": "~0.6.1"
+    "grunt-contrib-watch": "~0.6.1",
+    "gulp": "~3.8.10",
+    "gulp-sass": "~1.1.0"
   }
 }
