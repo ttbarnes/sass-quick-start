@@ -5,20 +5,20 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     watch = require('gulp-watch');
 
-var gulpDirectories = {
+var gulpPaths = {
   sass:'scss/',
   cssDist:'dist/css/'
 }
 
 gulp.task('sass', function () {
-  gulp.src(gulpDirectories.sass + '**/*.scss')
+  gulp.src(gulpPaths.sass + '**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest(gulpDirectories.cssDist))
-    .pipe(concat(gulpDirectories.cssDist + 'main.css'))
+    .pipe(gulp.dest(gulpPaths.cssDist))
+    .pipe(concat(gulpPaths.cssDist + 'main.css'))
     .pipe(gulp.dest('./'))
     .pipe(minifyCSS())
     .pipe(rename('main.min.css'))
-    .pipe(gulp.dest(gulpDirectories.cssDist));
+    .pipe(gulp.dest(gulpPaths.cssDist));
 });
 
 gulp.task('watch', function () {
