@@ -12,17 +12,17 @@
   },
   "homepage": "https://github.com/ttbarnes/sass-quick-start",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-cssmin": "~0.10.0",
-    "grunt-contrib-sass": "~0.8.1",
-    "grunt-contrib-uglify": "~0.6.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "gulp": "~3.8.10",
-    "gulp-sass": "~1.1.0",
-    "gulp-concat": "~2.4.2",
-    "gulp-minify-css": "~0.3.11",
-    "gulp-rename": "~1.2.0",
-    "gulp-watch": "~3.0.0"
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-watch": "*"
   }
 }
