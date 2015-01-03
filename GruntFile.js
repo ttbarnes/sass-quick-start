@@ -8,18 +8,12 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch: {
-      css: {
-        files: 'scss/*.scss',
-        tasks: ['sass', 'cssmin', 'clean']
-      }
-    },
     cssmin: {
       add_banner: {
         files: [{
           expand: true,
           cwd: 'dist/css/',
-          src: ['main.min.css'],
+          src: ['main.css'],
           dest: 'dist/css/',
           ext: '.min.css'
         }]
@@ -29,11 +23,17 @@ module.exports = function(grunt) {
       build: {
         src: ['.sass-cache/']
       }
+    },
+    watch: {
+      css: {
+        files: 'scss/*.scss',
+        tasks: ['sass', 'cssmin', 'clean']
+      }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.registerTask('default',['watch', 'cssmin', 'clean']);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.registerTask('default',['watch']);
 }
