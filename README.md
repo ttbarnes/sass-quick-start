@@ -5,6 +5,17 @@ Quick start sass to css compilation with grunt or gulp.
 
 Kick start your project, idea or proof of concept with minimal sass/grunt/gulp configuration.
 
+
+##Prerequisites
+
+Install the sass gem: `gem install sass`
+
+For gulp, ensure you have gulp installed:
+`npm install --global gulp`
+
+For grunt, ensure you have the grunt CLI installed:
+`npm install -g grunt-cli`
+
 ##Getting started
 1) `npm install`
 
