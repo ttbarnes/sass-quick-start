@@ -31,12 +31,14 @@ var gulpPaths = {
   cssDist:'dist/css/'
 }
 ```
-- grunt/gulp tasks to compile, minify and watch sass:
+- grunt tasks to compile, minify and watch sass:
   - grunt-contrib-clean
   - grunt-contrib-cssmin
   - grunt-contrib-sass
   - grunt-contrib-uglify
   - grunt-contrib-watch
+  
+- gulp tasks to compile, minify and watch sass:
   - gulp-sass
   - gulp-concat
   - gulp-minify-css
