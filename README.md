@@ -23,7 +23,7 @@ For grunt, ensure you have the grunt CLI installed:
 
 ##What's included
 - Minimal HTML file for a starting point
-- Minimal Sass for a starting point
+- Minimal single Sass file for a starting point
 - Gulp paths object, to easily update your paths:
 ```
 var gulpPaths = {
